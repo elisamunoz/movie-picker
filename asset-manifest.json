@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/movie-picker/static/css/main.073c9b0a.css",
+    "main.js": "/movie-picker/static/js/main.d2edf2ab.js",
+    "static/js/787.7ef82dd6.chunk.js": "/movie-picker/static/js/787.7ef82dd6.chunk.js",
+    "static/media/logo.svg": "/movie-picker/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/movie-picker/index.html",
+    "main.073c9b0a.css.map": "/movie-picker/static/css/main.073c9b0a.css.map",
+    "main.d2edf2ab.js.map": "/movie-picker/static/js/main.d2edf2ab.js.map",
+    "787.7ef82dd6.chunk.js.map": "/movie-picker/static/js/787.7ef82dd6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d2edf2ab.js"
+  ]
+}
