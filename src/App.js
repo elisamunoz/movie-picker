@@ -1,4 +1,5 @@
 import "./App.scss";
+import "./assets/styles/reset.scss";
 import Button from "./ui/components/button";
 
 function App() {
