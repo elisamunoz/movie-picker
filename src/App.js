@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <h1>Hello world</h1>
-      <Button text="watch here!" />
+      <Button text="WATCH HERE!" />
     </>
   );
 }

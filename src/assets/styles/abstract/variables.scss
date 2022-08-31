@@ -1,0 +1,25 @@
+/* -------------- */
+/* --- Colors --- */
+/* -------------- */
+$white: #ffffff;
+$gray: #a5a5a5;
+$black: #000000;
+$orange: #ec5632;
+$orange-darker: #f53c0e;
+$orange-darkest: #e9431b;
+
+$modal-button-color: $orange;
+$modal-button-color-hover: $orange-darker;
+
+/* -------------- */
+/* --- Others --- */
+/* -------------- */
+$border-radius: 4px;
+
+/* ------------------- */
+/* --- Transitions --- */
+/* ------------------- */
+$transition-duration: 0.5s;
+$transition-timing: ease;
+$transition-property: all;
+$transition: $transition-duration $transition-timing $transition-property;
