@@ -4,10 +4,8 @@ import styles from "./layout.module.scss";
 
 const Layout = () => (
   <div className={styles.layout}>
-    <div className={styles.background}>
-      <Body />
-      <Footer />
-    </div>
+    <Body />
+    <Footer />
   </div>
 );
 
