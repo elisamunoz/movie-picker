@@ -1,10 +1,13 @@
 import Footer from "./footer";
+import Body from "./body";
 import styles from "./layout.module.scss";
 
-const Layout = ({ children }) => (
-  <div className={styles.wrapper}>
-    <div className={styles.children}>{children}</div>
-    <Footer />
+const Layout = () => (
+  <div className={styles.layout}>
+    <div className={styles.background}>
+      <Body />
+      <Footer />
+    </div>
   </div>
 );
 
