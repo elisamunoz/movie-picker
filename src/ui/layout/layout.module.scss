@@ -1,0 +1,15 @@
+@import "assets/styles/abstract/index.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: green;
+}
+
+.children {
+  display: flex;
+  justify-content: center;
+}
