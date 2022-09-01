@@ -1,0 +1,56 @@
+@import "assets/styles/abstract/index.scss";
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $modal-background-color;
+  padding: 16px;
+  //border
+  border: 10px solid $modal-border-color;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  @include tablet {
+    width: 684px;
+    height: 364px;
+  }
+}
+
+.content {
+  align-self: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $modal-title-color;
+  font-weight: 700;
+  line-height: 38px;
+
+  @include tablet {
+    font-size: 32px;
+    padding: 60px 0 30px;
+  }
+}
+
+.text {
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 24px;
+    padding-bottom: 22px;
+  }
+}
+
+.button {
+  margin-top: 15px;
+
+  @include tablet {
+    margin-bottom: 42px;
+    margin-top: 0;
+  }
+}

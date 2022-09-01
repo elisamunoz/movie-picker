@@ -1,9 +1,10 @@
+import classnames from "classnames";
 import styles from "./Button.module.scss";
 
-const Button = ({ onClick, text, disabled }) => (
+const Button = ({ onClick, text, disabled, className }) => (
   <button
     onClick={onClick}
-    className={styles.button}
+    className={classnames(styles.button, className)}
     disabled={disabled}
     type="button"
   >
