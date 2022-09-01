@@ -1,14 +1,11 @@
-import "./App.scss";
-import "./assets/styles/reset.scss";
-import Button from "./ui/components/button";
+import "assets/styles/reset.scss";
+import Button from "ui/components/button";
+import PageLayout from "ui/layout";
 
-function App() {
-  return (
-    <>
-      <h1>Hello world</h1>
-      <Button text="WATCH HERE!" />
-    </>
-  );
-}
+const App = () => (
+  <PageLayout>
+    <Button text="WATCH HERE!" />
+  </PageLayout>
+);
 
 export default App;

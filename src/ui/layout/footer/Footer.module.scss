@@ -1,0 +1,18 @@
+@import "assets/styles/abstract/index.scss";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 56px;
+  width: 100%;
+}
+
+.content {
+  align-self: center;
+}
+
+.text {
+  font-size: 16px;
+  color: $footer-font-color;
+  padding: 0 15px;
+}

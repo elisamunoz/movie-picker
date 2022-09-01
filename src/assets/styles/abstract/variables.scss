@@ -3,6 +3,7 @@
 /* -------------- */
 $white: #ffffff;
 $gray: #a5a5a5;
+$gray-darker: #878787;
 $black: #000000;
 $orange: #ec5632;
 $orange-darker: #f53c0e;
@@ -10,6 +11,8 @@ $orange-darkest: #e9431b;
 
 $modal-button-color: $orange;
 $modal-button-color-hover: $orange-darker;
+
+$footer-font-color: $gray-darker;
 
 /* -------------- */
 /* --- Others --- */
@@ -23,3 +26,16 @@ $transition-duration: 0.5s;
 $transition-timing: ease;
 $transition-property: all;
 $transition: $transition-duration $transition-timing $transition-property;
+
+/* ------------------- */
+/* --- Breakpoints --- */
+/* ------------------- */
+// $bp_xxs: 480px !default;
+// $bp_xs: 767px !default;
+// $bp_sm: $bp_xs + 1 !default;
+// $bp_md: 992px !default;
+// $bp_lg: 1100px !default;
+
+$mobile: 767px !default;
+$tablet: 992px !default;
+$desktop: 1100px !default;
