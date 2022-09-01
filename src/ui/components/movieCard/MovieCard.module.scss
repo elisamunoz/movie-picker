@@ -4,6 +4,12 @@
   width: 212px;
   height: 291px;
   cursor: pointer;
+  margin: auto;
+  padding: 15px 0;
+
+  @include tablet {
+    margin: 0 14px;
+  }
 }
 
 .image {

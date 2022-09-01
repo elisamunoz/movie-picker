@@ -1,0 +1,11 @@
+@import "assets/styles/abstract/index.scss";
+
+.movieCardList {
+}
+
+.cards {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
+}
