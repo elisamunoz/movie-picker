@@ -1,0 +1,17 @@
+@import "assets/styles/abstract/index.scss";
+
+.question {
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 40px;
+  color: $text-color;
+  text-align: center;
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  padding: 20px 0;
+
+  @include tablet {
+    font-size: 34px;
+  }
+}

@@ -2,9 +2,9 @@ import Footer from "./footer";
 import Body from "./body";
 import styles from "./layout.module.scss";
 
-const Layout = () => (
+const Layout = ({ children }) => (
   <div className={styles.layout}>
-    <Body />
+    <Body>{children}</Body>
     <Footer />
   </div>
 );
