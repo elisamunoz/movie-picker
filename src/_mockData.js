@@ -23,7 +23,7 @@ export const MOVIES = [
     id: 2,
     title: "Blonde",
     imdbId: "tt1655389",
-    imageUrl: "blonde",
+    imageUrl: blonde,
     category: "drama"
   },
   {

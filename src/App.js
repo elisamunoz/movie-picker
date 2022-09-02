@@ -12,7 +12,7 @@ import styles from "./App.module.scss";
 const App = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const totalQuestions = QUESTIONS.length;
-  console.log(totalQuestions);
+
   return (
     <PageLayout>
       <Modal className={styles.modal}>
