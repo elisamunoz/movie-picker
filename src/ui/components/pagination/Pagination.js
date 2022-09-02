@@ -1,21 +1,23 @@
 import classnames from "classnames";
 import styles from "./Pagination.module.scss";
 
-const PaginationDot = ({ emptyDot = false }) => (
+const PaginationDot = ({ isActive = false }) => (
   <div
-    className={classnames(styles.paginationDot, emptyDot && styles.emptyDot)}
+    className={classnames(styles.paginationDot, isActive && styles.isActive)}
   />
 );
 
-const Pagination = ({ currentQuestion, totalQuestions }) => (
+const Pagination = ({ currentQuestion = 0, totalQuestions = 0 }) => (
   <div className={styles.pagination}>
     <h3 className={styles.text}>
-      question {currentQuestion} of {totalQuestions}:
+      question {currentQuestion + 1} of {totalQuestions}:
     </h3>
     <div className={styles.dotsContainer}>
-      <PaginationDot emptyDot={true} />
-      <PaginationDot />
-      <PaginationDot emptyDot={true} />
+      {Array(totalQuestions)
+        .fill("")
+        .map((_, i) => (
+          <PaginationDot key={i} isActive={currentQuestion === i} />
+        ))}
     </div>
   </div>
 );

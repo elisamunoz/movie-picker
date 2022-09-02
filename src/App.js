@@ -10,12 +10,22 @@ import { useState } from "react";
 import styles from "./App.module.scss";
 
 const App = () => {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
   const totalQuestions = QUESTIONS.length;
+
+  const handleMovieCardClick = id => {
+    if (currentQuestionIndex + 1 < totalQuestions) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    } else {
+      setShowModal(true);
+    }
+    console.log(id);
+  };
 
   return (
     <PageLayout>
-      <Modal className={styles.modal}>
+      <Modal className={styles.modal} isVisible={showModal}>
         <h3 className={styles.title}>watch new movies for free!</h3>
         <h5 className={styles.text}>
           Watch any movies online for free without ads!
@@ -29,22 +39,20 @@ const App = () => {
           onClick={() => console.log("you clicked me")}
         />
       </Modal>
-      <Pagination currentQuestion={1} totalQuestions={2} />
+      <Pagination
+        currentQuestion={currentQuestionIndex}
+        totalQuestions={totalQuestions}
+      />
       <h3 className={styles.question}>Which one do you like the most?</h3>
       <MovieCardList>
-        <MovieCard
-          src="https://media.revistagq.com/photos/5dbab1e1d19dec0008a41e77/1:1/w_320,c_limit/terminator%20portada.jpg"
-          alt="Terminator image"
-        />
-        <MovieCard
-          src="https://media.revistagq.com/photos/5dbab1e1d19dec0008a41e77/1:1/w_320,c_limit/terminator%20portada.jpg"
-          alt="Terminator image"
-        />
-        <MovieCard
-          src="https://media.revistagq.com/photos/5dbab1e1d19dec0008a41e77/1:1/w_320,c_limit/terminator%20portada.jpg"
-          alt="Terminator image"
-        />
-        <MovieCard src={MOVIES[0].imageUrl} alt="Terminator image" />
+        {MOVIES.map(movie => (
+          <MovieCard
+            key={movie.id}
+            onClick={() => handleMovieCardClick(movie.id)}
+            src={movie.imageUrl}
+            alt={movie.title}
+          />
+        ))}
       </MovieCardList>
     </PageLayout>
   );
