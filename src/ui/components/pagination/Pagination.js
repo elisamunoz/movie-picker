@@ -15,7 +15,7 @@ const Pagination = ({ currentQuestion = 0, totalQuestions = 0 }) => (
     <div className={styles.dotsContainer}>
       {Array(totalQuestions)
         .fill("")
-        .map((_, i) => (
+        .map((value, i) => (
           <PaginationDot key={i} isActive={currentQuestion === i} />
         ))}
     </div>

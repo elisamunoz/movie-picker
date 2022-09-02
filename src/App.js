@@ -43,7 +43,9 @@ const App = () => {
         currentQuestion={currentQuestionIndex}
         totalQuestions={totalQuestions}
       />
-      <h3 className={styles.question}>Which one do you like the most?</h3>
+      <h3 className={styles.question}>
+        {QUESTIONS[currentQuestionIndex].text}
+      </h3>
       <MovieCardList>
         {MOVIES.map(movie => (
           <MovieCard
