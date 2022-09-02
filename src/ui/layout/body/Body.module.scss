@@ -5,6 +5,12 @@
   justify-content: center;
   width: 100%;
   flex-grow: 1;
+  box-sizing: border-box;
+  padding: 40px 0;
+
+  @include tablet {
+    padding: 40px;
+  }
 }
 
 .content {
