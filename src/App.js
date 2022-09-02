@@ -23,22 +23,11 @@ const App = () => {
     console.log(id);
   };
 
+  const handleModalButtonClick = imdbId =>
+    (window.location.href = `https://www.imdb.com/title/${imdbId}/`);
+
   return (
     <PageLayout>
-      <Modal className={styles.modal} isVisible={showModal}>
-        <h3 className={styles.title}>watch new movies for free!</h3>
-        <h5 className={styles.text}>
-          Watch any movies online for free without ads!
-        </h5>
-        <h5 className={styles.text}>
-          Have fun watching your favourite movies!
-        </h5>
-        <Button
-          className={styles.button}
-          text="WATCH HERE!"
-          onClick={() => console.log("you clicked me")}
-        />
-      </Modal>
       <Pagination
         currentQuestion={currentQuestionIndex}
         totalQuestions={totalQuestions}
@@ -54,6 +43,20 @@ const App = () => {
           />
         ))}
       </MovieCardList>
+      <Modal className={styles.modal} isVisible={showModal}>
+        <h3 className={styles.title}>watch new movies for free!</h3>
+        <h5 className={styles.text}>
+          Watch any movies online for free without ads!
+        </h5>
+        <h5 className={styles.text}>
+          Have fun watching your favourite movies!
+        </h5>
+        <Button
+          className={styles.button}
+          text="WATCH HERE!"
+          onClick={() => handleModalButtonClick("tt0068646")}
+        />
+      </Modal>
     </PageLayout>
   );
 };
