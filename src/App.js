@@ -5,9 +5,14 @@ import MovieCard from "ui/components/movieCard";
 import Modal from "ui/components/modal";
 import Button from "ui/components/button";
 import Pagination from "ui/components/pagination";
+import { QUESTIONS, MOVIES } from "./_mockData";
+import { useState } from "react";
 import styles from "./App.module.scss";
 
 const App = () => {
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
+  const totalQuestions = QUESTIONS.length;
+
   return (
     <PageLayout>
       <Modal className={styles.modal}>
@@ -24,7 +29,7 @@ const App = () => {
           onClick={() => console.log("you clicked me")}
         />
       </Modal>
-      <Pagination currentQuestion={1} totalQuestions={3} />
+      <Pagination currentQuestion={1} totalQuestions={2} />
       <h3 className={styles.question}>Which one do you like the most?</h3>
       <MovieCardList>
         <MovieCard
@@ -39,6 +44,7 @@ const App = () => {
           src="https://media.revistagq.com/photos/5dbab1e1d19dec0008a41e77/1:1/w_320,c_limit/terminator%20portada.jpg"
           alt="Terminator image"
         />
+        <MovieCard src={MOVIES[0].imageUrl} alt="Terminator image" />
       </MovieCardList>
     </PageLayout>
   );
