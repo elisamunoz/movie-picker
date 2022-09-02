@@ -1,11 +1,26 @@
 @import "assets/styles/abstract/index.scss";
 
+.wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .modal {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 340px;
+
   background: $modal-background-color;
   padding: 16px;
+  margin: auto;
   //border
   border: 10px solid $modal-border-color;
   border-radius: 10px;

@@ -1,10 +1,12 @@
-import Button from "ui/components/button";
+import classnames from "classnames";
 import styles from "./Modal.module.scss";
 
-const Modal = ({ onSubmit, children, isVisible = false }) =>
+const Modal = ({ onSubmit, children, isVisible = false, className }) =>
   isVisible ? (
-    <div className={styles.modal}>
-      <div className={styles.content}>{children}</div>
+    <div className={styles.wrapper}>
+      <div className={styles.modal}>
+        <div className={classnames(styles.content, className)}>{children}</div>
+      </div>
     </div>
   ) : null;
 
