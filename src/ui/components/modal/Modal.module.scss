@@ -1,11 +1,26 @@
 @import "assets/styles/abstract/index.scss";
 
+.wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .modal {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 340px;
+
   background: $modal-background-color;
   padding: 16px;
+  margin: auto;
   //border
   border: 10px solid $modal-border-color;
   border-radius: 10px;
@@ -20,37 +35,4 @@
 .content {
   align-self: center;
   text-align: center;
-}
-
-.title {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: $modal-title-color;
-  font-weight: 700;
-  line-height: 38px;
-
-  @include tablet {
-    font-size: 32px;
-    padding: 60px 0 30px;
-  }
-}
-
-.text {
-  font-weight: 400;
-  line-height: 28px;
-  font-size: 16px;
-
-  @include tablet {
-    font-size: 24px;
-    padding-bottom: 22px;
-  }
-}
-
-.button {
-  margin-top: 15px;
-
-  @include tablet {
-    margin-bottom: 42px;
-    margin-top: 0;
-  }
 }
