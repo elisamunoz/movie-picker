@@ -2,6 +2,7 @@ import "assets/styles/reset.scss";
 import PageLayout from "ui/layout";
 import MovieCardList from "ui/components/movieCardList";
 import MovieCard from "ui/components/movieCard";
+import Logo from "ui/components/logo";
 import Modal from "ui/components/modal";
 import Button from "ui/components/button";
 import Pagination from "ui/components/pagination";
@@ -28,6 +29,7 @@ const App = () => {
 
   return (
     <PageLayout>
+      <Logo />
       <Pagination
         currentQuestion={currentQuestionIndex}
         totalQuestions={totalQuestions}

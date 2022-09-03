@@ -6,11 +6,10 @@ $border-radius: 10px;
 
 .movieCard {
   position: relative;
-  margin: 15px 0;
+  margin: 20px auto;
   width: $movieCardWidth;
   height: $movieCardHeight;
   cursor: pointer;
-  margin: auto;
   border-radius: $border-radius;
 
   @include tablet {
