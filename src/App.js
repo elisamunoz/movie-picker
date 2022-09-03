@@ -42,8 +42,7 @@ const App = () => {
         {MOVIES.map(movie => (
           <MovieCard
             key={movie.id}
-            // onClick={() => handleMovieCardClick(movie.id)}
-            onClick={() => getMoviesbyId(currentQuestionIndex + 1)}
+            onClick={() => handleMovieCardClick(movie.id)}
             src={movie.imageUrl}
             alt={movie.title}
           />
