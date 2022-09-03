@@ -1,4 +1,3 @@
-import classnames from "classnames";
 import styles from "./Logo.module.scss";
 
 const Logo = () => (
