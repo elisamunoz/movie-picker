@@ -1,0 +1,23 @@
+@import "assets/styles/abstract/index.scss";
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 32px auto;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(199, 44, 60, 0.5);
+  border-radius: 4px;
+  width: 187px;
+  height: 62px;
+  box-sizing: border-box;
+}
+
+.text {
+  align-self: center;
+  //font styles
+  color: $logo-text-color;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 38px;
+}
