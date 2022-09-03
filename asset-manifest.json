@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/movie-picker/static/css/main.34ccab10.css",
-    "main.js": "/movie-picker/static/js/main.301358c7.js",
+    "main.css": "/movie-picker/static/css/main.187eddec.css",
+    "main.js": "/movie-picker/static/js/main.782b686f.js",
     "static/media/movies-BG.png": "/movie-picker/static/media/movies-BG.dd875c23a23a2dca4067.png",
+    "static/media/bullet-train.png": "/movie-picker/static/media/bullet-train.59d163d8295f31d604c5.png",
     "static/media/blonde.png": "/movie-picker/static/media/blonde.70d23fdbc5dee5406504.png",
+    "static/media/godfather.jpg": "/movie-picker/static/media/godfather.e5c02354bf14529e3018.jpg",
+    "static/media/batman.png": "/movie-picker/static/media/batman.ebc19638d57940732cd9.png",
+    "static/media/top-gun.png": "/movie-picker/static/media/top-gun.f109881639dccf132e25.png",
+    "static/media/spider-man.png": "/movie-picker/static/media/spider-man.3248cbbd4cc6c08a2110.png",
+    "static/media/flash.png": "/movie-picker/static/media/flash.b746dc9b9b826d23aab3.png",
     "static/media/minions.png": "/movie-picker/static/media/minions.9aac11eb7e01fcaa9f03.png",
+    "static/media/purple-hearts.jpg": "/movie-picker/static/media/purple-hearts.cd35fb7e00bd3461112b.jpg",
     "static/media/gray-man.png": "/movie-picker/static/media/gray-man.05549d70be5b7a46e9b7.png",
+    "static/media/thor.png": "/movie-picker/static/media/thor.cb50abaf805dc3b6cb3f.png",
     "index.html": "/movie-picker/index.html",
-    "main.34ccab10.css.map": "/movie-picker/static/css/main.34ccab10.css.map",
-    "main.301358c7.js.map": "/movie-picker/static/js/main.301358c7.js.map"
+    "main.187eddec.css.map": "/movie-picker/static/css/main.187eddec.css.map",
+    "main.782b686f.js.map": "/movie-picker/static/js/main.782b686f.js.map"
   },
   "entrypoints": [
-    "static/css/main.34ccab10.css",
-    "static/js/main.301358c7.js"
+    "static/css/main.187eddec.css",
+    "static/js/main.782b686f.js"
   ]
 }
