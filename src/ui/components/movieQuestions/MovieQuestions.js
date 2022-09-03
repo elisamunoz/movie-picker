@@ -3,7 +3,7 @@ import MovieCard from "ui/components/movieCard";
 import styles from "./MovieQuestions.module.scss";
 
 const MovieQuestions = ({ onClick, title, movies = [] }) => (
-  <div className={styles.movieCard} onClick={onClick} role="button">
+  <div className={styles.movieCard}>
     <h3 className={styles.question}>{title}</h3>
     <MovieCardList>
       {movies.map((movie = {}) => (

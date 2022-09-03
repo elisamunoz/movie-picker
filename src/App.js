@@ -8,7 +8,7 @@ import Button from "ui/components/button";
 import Pagination from "ui/components/pagination";
 import "assets/styles/reset.scss";
 import styles from "./App.module.scss";
-import { getMoviesbyId } from "functions";
+import { getMoviesbyId, handleModalButtonClick } from "functions";
 
 const App = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -17,16 +17,13 @@ const App = () => {
   const totalQuestions = QUESTIONS.length;
 
   const handleMovieCardClick = movie => {
-    setAnswer([...answer, movie.id]);
+    setAnswer([...answer, movie]);
     if (currentQuestionIndex + 1 < totalQuestions) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       setShowModal(true);
     }
   };
-
-  const handleModalButtonClick = imdbId =>
-    (window.location.href = `https://www.imdb.com/title/${imdbId}/`);
 
   return (
     <PageLayout>
@@ -63,7 +60,7 @@ const App = () => {
         <Button
           className={styles.button}
           text="WATCH HERE!"
-          onClick={() => handleModalButtonClick("tt0068646")}
+          onClick={() => handleModalButtonClick(answer)}
         />
       </Modal>
     </PageLayout>
