@@ -46,22 +46,6 @@ const App = () => {
             alt={movie.title}
           />
         ))}
-        {MOVIES.map(movie => (
-          <MovieCard
-            key={movie.id}
-            onClick={() => handleMovieCardClick(movie.id)}
-            src={movie.imageUrl}
-            alt={movie.title}
-          />
-        ))}
-        {MOVIES.map(movie => (
-          <MovieCard
-            key={movie.id}
-            onClick={() => handleMovieCardClick(movie.id)}
-            src={movie.imageUrl}
-            alt={movie.title}
-          />
-        ))}
       </MovieCardList>
       <Modal className={styles.modal} isVisible={showModal}>
         <h3 className={styles.title}>watch new movies for free!</h3>
