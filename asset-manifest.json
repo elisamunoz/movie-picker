@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/movie-picker/static/css/main.187eddec.css",
-    "main.js": "/movie-picker/static/js/main.782b686f.js",
+    "main.css": "/movie-picker/static/css/main.1a571b31.css",
+    "main.js": "/movie-picker/static/js/main.c668f340.js",
     "static/media/movies-BG.png": "/movie-picker/static/media/movies-BG.dd875c23a23a2dca4067.png",
+    "static/media/elvis.jpg": "/movie-picker/static/media/elvis.ef44395ad98137bd3e47.jpg",
+    "static/media/prey.jpg": "/movie-picker/static/media/prey.51e3342cd7b0e4b93f92.jpg",
+    "static/media/sandman.jpg": "/movie-picker/static/media/sandman.328772d915a864fcf5cb.jpg",
     "static/media/bullet-train.png": "/movie-picker/static/media/bullet-train.59d163d8295f31d604c5.png",
     "static/media/blonde.png": "/movie-picker/static/media/blonde.70d23fdbc5dee5406504.png",
     "static/media/godfather.jpg": "/movie-picker/static/media/godfather.e5c02354bf14529e3018.jpg",
@@ -12,14 +15,20 @@
     "static/media/flash.png": "/movie-picker/static/media/flash.b746dc9b9b826d23aab3.png",
     "static/media/minions.png": "/movie-picker/static/media/minions.9aac11eb7e01fcaa9f03.png",
     "static/media/purple-hearts.jpg": "/movie-picker/static/media/purple-hearts.cd35fb7e00bd3461112b.jpg",
+    "static/media/superpets.jpg": "/movie-picker/static/media/superpets.ac08e3caf46bc2118eac.jpg",
+    "static/media/turningRed.jpg": "/movie-picker/static/media/turningRed.9d4248a57445a4e766da.jpg",
     "static/media/gray-man.png": "/movie-picker/static/media/gray-man.05549d70be5b7a46e9b7.png",
+    "static/media/dragon-ball.jpg": "/movie-picker/static/media/dragon-ball.19200d1a7eb3dc31fefa.jpg",
     "static/media/thor.png": "/movie-picker/static/media/thor.cb50abaf805dc3b6cb3f.png",
+    "static/media/sea-beast.jpg": "/movie-picker/static/media/sea-beast.39b10c9d29b47c6f9416.jpg",
+    "static/media/luck.jpg": "/movie-picker/static/media/luck.b1eb41ac854babb5e8fa.jpg",
+    "static/media/lightyear.jpg": "/movie-picker/static/media/lightyear.5f29b1a722eacd59093e.jpg",
     "index.html": "/movie-picker/index.html",
-    "main.187eddec.css.map": "/movie-picker/static/css/main.187eddec.css.map",
-    "main.782b686f.js.map": "/movie-picker/static/js/main.782b686f.js.map"
+    "main.1a571b31.css.map": "/movie-picker/static/css/main.1a571b31.css.map",
+    "main.c668f340.js.map": "/movie-picker/static/js/main.c668f340.js.map"
   },
   "entrypoints": [
-    "static/css/main.187eddec.css",
-    "static/js/main.782b686f.js"
+    "static/css/main.1a571b31.css",
+    "static/js/main.c668f340.js"
   ]
 }
