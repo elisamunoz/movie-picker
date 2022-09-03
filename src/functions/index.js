@@ -5,4 +5,14 @@ const getMoviesbyId = (movieIds = []) =>
 
 const getMoviebyId = movieId => MOVIES.find(movie => movie.id === movieId);
 
-export { getMoviesbyId, getMoviebyId };
+const filterMoviesbyCategory = (movies = [], category) => {
+  return movies.filter(movie => {
+    // Filter movies based on previous movie selection
+    if (movie.category === category) {
+      return true;
+    }
+    return false;
+  });
+};
+
+export { getMoviesbyId, getMoviebyId, filterMoviesbyCategory };

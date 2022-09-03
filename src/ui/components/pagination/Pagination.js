@@ -7,8 +7,17 @@ const PaginationDot = ({ isActive = false }) => (
   />
 );
 
-const Pagination = ({ currentQuestion = 0, totalQuestions = 0 }) => (
-  <div className={styles.pagination}>
+const Pagination = ({
+  currentQuestion = 0,
+  totalQuestions = 0,
+  isVisible = true
+}) => (
+  <div
+    className={classnames(
+      styles.pagination,
+      isVisible ? null : styles.notVisible
+    )}
+  >
     <h3 className={styles.text}>
       question {currentQuestion + 1} of {totalQuestions}:
     </h3>
