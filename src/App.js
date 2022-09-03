@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { QUESTIONS, MOVIES } from "./_mockData";
+import { QUESTIONS } from "./_mockData";
 import PageLayout from "ui/layout";
-import MovieCardList from "ui/components/movieCardList";
-import MovieCard from "ui/components/movieCard";
+import MovieQuestions from "ui/components/movieQuestions";
 import Logo from "ui/components/logo";
 import Modal from "ui/components/modal";
 import Button from "ui/components/button";
 import Pagination from "ui/components/pagination";
 import "assets/styles/reset.scss";
 import styles from "./App.module.scss";
+import { getMoviesbyId } from "functions";
 
 const App = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -16,8 +16,8 @@ const App = () => {
   const [showModal, setShowModal] = useState(false);
   const totalQuestions = QUESTIONS.length;
 
-  const handleMovieCardClick = id => {
-    setAnswer([...answer, id]);
+  const handleMovieCardClick = movie => {
+    setAnswer([...answer, movie.id]);
     if (currentQuestionIndex + 1 < totalQuestions) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
@@ -35,19 +35,23 @@ const App = () => {
         currentQuestion={currentQuestionIndex}
         totalQuestions={totalQuestions}
       />
-      <h3 className={styles.question}>
-        {QUESTIONS[currentQuestionIndex].text}
-      </h3>
-      <MovieCardList>
-        {MOVIES.map(movie => (
-          <MovieCard
-            key={movie.id}
-            onClick={() => handleMovieCardClick(movie.id)}
-            src={movie.imageUrl}
-            alt={movie.title}
+
+      {QUESTIONS.filter(
+        (question, index) => index === currentQuestionIndex
+      ).map(question => {
+        const title = question.text;
+        const movies = getMoviesbyId(question.options);
+
+        return (
+          <MovieQuestions
+            key={question.id}
+            title={title}
+            movies={movies}
+            onClick={movie => handleMovieCardClick(movie)}
           />
-        ))}
-      </MovieCardList>
+        );
+      })}
+
       <Modal className={styles.modal} isVisible={showModal}>
         <h3 className={styles.title}>watch new movies for free!</h3>
         <h5 className={styles.text}>
