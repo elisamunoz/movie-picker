@@ -8,7 +8,7 @@ import Button from "ui/components/button";
 import Pagination from "ui/components/pagination";
 import "assets/styles/reset.scss";
 import styles from "./App.module.scss";
-import { getMoviesbyId, handleModalButtonClick } from "functions";
+import { getMoviesbyId, filterMoviesbyCategory } from "functions";
 
 const App = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -25,26 +25,39 @@ const App = () => {
     }
   };
 
+  const handleModalButtonClick = (answer = []) => {
+    const imdbId = answer.pop().imdbId;
+    return (window.location.href = `https://www.imdb.com/title/${imdbId}/`);
+  };
+
   return (
     <PageLayout>
       <Logo />
       <Pagination
         currentQuestion={currentQuestionIndex}
         totalQuestions={totalQuestions}
+        isVisible={!showModal}
       />
 
       {QUESTIONS.filter(
         (question, index) => index === currentQuestionIndex
       ).map(question => {
         const title = question.text;
+        const prevAnswerCategory = answer[answer.length - 1]?.category;
         const movies = getMoviesbyId(question.options);
+        const filteredMovies =
+          // Do not filter on first Question
+          currentQuestionIndex === 0
+            ? movies
+            : filterMoviesbyCategory(movies, prevAnswerCategory);
 
         return (
           <MovieQuestions
             key={question.id}
             title={title}
-            movies={movies}
+            movies={filteredMovies}
             onClick={movie => handleMovieCardClick(movie)}
+            isVisible={!showModal}
           />
         );
       })}

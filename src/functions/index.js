@@ -5,9 +5,14 @@ const getMoviesbyId = (movieIds = []) =>
 
 const getMoviebyId = movieId => MOVIES.find(movie => movie.id === movieId);
 
-const handleModalButtonClick = (answer = []) => {
-  const imdbId = answer.pop().imdbId;
-
-  return (window.location.href = `https://www.imdb.com/title/${imdbId}/`);
+const filterMoviesbyCategory = (movies = [], category) => {
+  return movies.filter(movie => {
+    // Filter movies based on previous movie selection
+    if (movie.category === category) {
+      return true;
+    }
+    return false;
+  });
 };
-export { getMoviesbyId, getMoviebyId, handleModalButtonClick };
+
+export { getMoviesbyId, getMoviebyId, filterMoviesbyCategory };

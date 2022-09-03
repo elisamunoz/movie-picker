@@ -1,5 +1,10 @@
 @import "assets/styles/abstract/index.scss";
 
+.notVisible {
+  transition: $transition;
+  opacity: 0;
+}
+
 .pagination {
   display: flex;
   flex-direction: column;
