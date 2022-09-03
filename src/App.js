@@ -1,4 +1,5 @@
-import "assets/styles/reset.scss";
+import { useState } from "react";
+import { QUESTIONS, MOVIES } from "./_mockData";
 import PageLayout from "ui/layout";
 import MovieCardList from "ui/components/movieCardList";
 import MovieCard from "ui/components/movieCard";
@@ -6,22 +7,22 @@ import Logo from "ui/components/logo";
 import Modal from "ui/components/modal";
 import Button from "ui/components/button";
 import Pagination from "ui/components/pagination";
-import { QUESTIONS, MOVIES } from "./_mockData";
-import { useState } from "react";
+import "assets/styles/reset.scss";
 import styles from "./App.module.scss";
 
 const App = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [answer, setAnswer] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const totalQuestions = QUESTIONS.length;
 
   const handleMovieCardClick = id => {
+    setAnswer([...answer, id]);
     if (currentQuestionIndex + 1 < totalQuestions) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       setShowModal(true);
     }
-    console.log(id);
   };
 
   const handleModalButtonClick = imdbId =>
