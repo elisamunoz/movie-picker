@@ -2,14 +2,23 @@ import batman from "assets/images/movie-posters/batman.png";
 import blackPanther from "assets/images/movie-posters/black-panther.jpg";
 import blonde from "assets/images/movie-posters/blonde.png";
 import bulletTrain from "assets/images/movie-posters/bullet-train.png";
+import dragonBall from "assets/images/movie-posters/dragon-ball.jpg";
+import elvis from "assets/images/movie-posters/elvis.jpg";
 import flash from "assets/images/movie-posters/flash.png";
 import godfather from "assets/images/movie-posters/godfather.jpg";
 import grayManImg from "assets/images/movie-posters/gray-man.png";
+import lightyear from "assets/images/movie-posters/lightyear.jpg";
+import luck from "assets/images/movie-posters/luck.jpg";
 import minions from "assets/images/movie-posters/minions.png";
+import prey from "assets/images/movie-posters/prey.jpg";
 import purpleHearts from "assets/images/movie-posters/purple-hearts.jpg";
+import sandman from "assets/images/movie-posters/sandman.jpg";
+import seaBest from "assets/images/movie-posters/sea-beast.jpg";
 import spiderMan from "assets/images/movie-posters/spider-man.png";
+import superPets from "assets/images/movie-posters/superpets.jpg";
 import thor from "assets/images/movie-posters/thor.png";
 import topGun from "assets/images/movie-posters/top-gun.png";
+import turningRed from "assets/images/movie-posters/turningRed.jpg";
 
 export const MOVIES = [
   {
@@ -75,60 +84,69 @@ export const MOVIES = [
     imageUrl: godfather,
     category: "drama"
   },
-  // {
-  //   id: 10,
-  //   title: "",
-  //   imdbId: "",
-  //   imageUrl:
-  // },
-  // {
-  //   id: 11,
-  //   title: "",
-  //   imdbId: "",
-  //   imageUrl:
-  // },
-  // {
-  //   id: 12,
-  //   title: "",
-  //   imdbId: "",
-  //   imageUrl:
-  // },
-  // {
-  //   id: 13,
-  //   title: "",
-  //   imdbId: "",
-  //   imageUrl:
-  // },
-  // {
-  //   id: 14,
-  //   title: "",
-  //   imdbId: "",
-  //   imageUrl:
-  // },
-  // {
-  //   id: 15,
-  //   title: "",
-  //   imdbId: "",
-  //   imageUrl:
-  // },
-  // {
-  //   id: 16,
-  //   title: "",
-  //   imdbId: "",
-  //   imageUrl:
-  // },
-  // {
-  //   id: 17,
-  //   title: "",
-  //   imdbId: "",
-  //   imageUrl:
-  // },
-  // {
-  //   id: 18,
-  //   title: "",
-  //   imdbId: "",
-  //   imageUrl:
-  // },
+  {
+    id: 10,
+    title: "Dragon Ball Super: Super Hero",
+    imdbId: "tt14614892",
+    imageUrl: dragonBall,
+    category: "animation"
+  },
+  {
+    id: 11,
+    title: "DC League of Super-Pets",
+    imdbId: "tt8912936",
+    imageUrl: superPets,
+    category: "animation"
+  },
+  {
+    id: 12,
+    title: "Lightyear",
+    imdbId: "tt10298810",
+    imageUrl: lightyear,
+    category: "animation"
+  },
+  {
+    id: 13,
+    title: "Luck",
+    imdbId: "tt7214954",
+    imageUrl: luck,
+    category: "animation"
+  },
+  {
+    id: 14,
+    title: "The Sea Beast",
+    imdbId: "tt9288046",
+    imageUrl: seaBest,
+    category: "animation"
+  },
+  {
+    id: 15,
+    title: "Turning Red",
+    imdbId: "tt8097030",
+    imageUrl: turningRed,
+    category: "animation"
+  },
+  {
+    id: 16,
+    title: "Prey",
+    imdbId: "tt11866324",
+    imageUrl: prey,
+    category: "drama"
+  },
+  {
+    id: 17,
+    title: "Elvis",
+    imdbId: "tt3704428",
+    imageUrl: elvis,
+    category: "drama"
+  },
+  {
+    id: 18,
+    title: "The Sandman",
+    imdbId: "tt1751634",
+    imageUrl: sandman,
+    category: "drama"
+  },
   {
     id: 19,
     title: "The Batman",
@@ -161,13 +179,11 @@ export const QUESTIONS = [
   {
     id: 2,
     text: "Which one do you like the most?",
-    // options: [4, 5, 6, 7, 8, 9, 10, 11, 12]
-    options: [4, 5, 6, 7, 8, 9]
+    options: [4, 5, 6, 7, 8, 9, 10, 11, 12]
   },
   {
     id: 3,
     text: "Which one do you want to watch now?",
-    // options: [13, 14, 15, 16, 17, 18, 19, 20, 21]
-    options: [19, 20, 21]
+    options: [13, 14, 15, 16, 17, 18, 19, 20, 21]
   }
 ];
