@@ -9,10 +9,12 @@ This is a responsive app.
 
 I chose to use:
 
-- ReactJs
-- Sass
-- GitHub
-  To ensure scalability and version control.
+- [ReactJs](https://reactjs.org/)
+- [React-CSS-Modules](https://github.com/gajus/react-css-modules)
+- [Sass](https://sass-lang.com/)
+- [GitHub](https://github.com/)
+
+To ensure scalability and version control.
 
 ### Live deployment
 
