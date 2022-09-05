@@ -1,4 +1,4 @@
-#Movie Picker
+# Movie Picker
 
 You'll be presented with a question and some movie options, when you click one of them, you'll see a new question, with new options. Eventually you'll be presented with a modal that redirects you to the IDBM website of the last picked movie.
 This is a responsive app.
